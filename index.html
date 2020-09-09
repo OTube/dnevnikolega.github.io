@@ -5,10 +5,21 @@
 	<style>p{color:blue; font-family: Impact"}</style>
 </head>
 <body>
-	<p>Мат</p><h1>ничего</h1>
-	<p>Рус</p><h2>правила повторить</h2>
-	<h3><a href="https://www.instagram.com/1serafim1_official/">Серафим в Инстаграмме</a></h3>
-	<h4>Олегатор терминатор</h4>
-	<img src="images\1584457066120.ico" width="192" height="256">
+	<h1><a href='https://www.instagram.com/1serafim1_official'/>Серафим в Инстаграмме</a></h1>
+	<p><h2>Олег</h2></p>
+	<h3 id="pt">$</h3>
+	<script type="text/javascript">
+  		var point = localStorage.getItem("pointvalue")
+  		document.getElementById("pt").innerHTML = point;
+  		alert(point);
+		function increaser()
+		{
+			point++;
+			document.getElementById("pt").innerHTML = point;
+			localStorage.setItem("pointvalue", point);
+		}
+	</script>
+	<img src='images\1584457066120.ico' width="192" height="256"/>
+	<input type="button" value="+" onclick="increaser()"/>
 </body>
 </html>
